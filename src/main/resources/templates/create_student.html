@@ -3,7 +3,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 	<head>
 		<meta charset="ISO-8859-1">
-		<title>Student Management System</title>
+		<title>Système de Gestion des Etudiants</title>
 		<link 
 		rel="stylesheet" 
 		href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
@@ -15,7 +15,7 @@
 	
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #212529; color: #fff;">
-				  <a class="navbar-brand" th:href="@{/students}">Student Management System</a>
+				  <a class="navbar-brand" th:href="@{/students}">Système de Gestion des Etudiants</a>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
 				  </button>
@@ -23,48 +23,48 @@
 				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 				    <ul class="navbar-nav mr-auto">
 				      <li class="nav-item">
-				        <a class="nav-link" th:href="@{/students}">List of students</a>
+				        <a class="nav-link" th:href="@{/students}">Liste des étudiants</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link" th:href="@{/students/new}">Add student</a>
+				        <a class="nav-link" th:href="@{/students/new}">Ajouter étudiant</a>
 				      </li>
 				  </div>
 				</nav>
 		<div class="container mt-5">
 				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
-						<h1 class="text-center mt-3">Create New Student</h1>
+					<div  class="col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+						<h1 class="text-center mt-3">Ajouter un nouveau étudiant</h1>
 						<div class="card-body">
 							<form th:action="@{/students}" th:object="${student}" method="POST">
 															  <div class="form-group">
-															    <label>Student First Name</label>
+															    <label>Prénom</label>
 															    <input
 																 type="text" 
 																 class="form-control" 
 																 th:field="*{firstName}"
-																 placeholder="Enter Student First Name"
+																 placeholder="Entrer le prénom de l'étudiant"
 																 >
 															  </div>
 															  <div class="form-group">
-															    <label>Student Last Name</label>
+															    <label>Nom</label>
 																<input
 																type="text" 
 																class="form-control" 
 																th:field="*{lastName}"
-																placeholder="Enter Student Last Name"
+																placeholder="Entrer le nom de l'étudiant"
 																>
 															  </div>
 															  <div class="form-group">
-															    <label >Student Email</label>
+															    <label >Email</label>
 																<input
 																type="email" 
 																class="form-control" 
 																th:field="*{email}"
-																placeholder="Enter Student Email"
+																placeholder="Entrer l'email de l'étudiant"
 																>
-																<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+																<small id="emailHelp" class="form-text text-muted">Nous ne partagerons jamais votre e-mail avec qui que ce soit d'autre.</small>
 															  </div>
-															  <button type="submit" class="btn btn-primary" style="background-color: #212529; color: #fff;">submit</button>
+															  <button type="submit" class="btn btn-primary" style="background-color: #212529; color: #fff;">soumettre</button>
 															</form>
 						</div>
 					</div>
