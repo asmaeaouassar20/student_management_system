@@ -16,4 +16,4 @@ This project implements CRUD ( Create, Read, Update, Delete ) operations to mana
 - Spring Tool Suite (STS) 4
 - Maven 
 ### Overview
-watch this [video on youtube](http) to see Student Management System in action.
+watch this [video on youtube](https://www.youtube.com/watch?v=oqWp3mug2gs&t=18s) to see Student Management System in action.
